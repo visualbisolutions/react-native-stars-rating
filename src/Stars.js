@@ -33,7 +33,7 @@ export default class Stars extends Component {
     let {rounding} = this.props;
     this.state = {
       activeIndex: this.props.rate === 0 ?
-        1 :
+        0 :
         rounding === 'up' ?
           Math.round(this.props.rate * 2) / 2 :
           Math.floor(this.props.rate * 2) / 2,
